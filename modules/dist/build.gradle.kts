@@ -5,7 +5,7 @@ plugins {
 }
 
 bukkitResourceGenerator {
-    main = "kr.hqservice."
+    main = "kr.hqservice.project_x.practice.character_stat"
     name = "${extra["projectName"]}"
     apiVersion = "1.13"
     depend = listOf("HQFramework")

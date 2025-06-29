@@ -13,12 +13,17 @@ dependencyResolutionManagement {
     repositories {
         maven("https://maven.hqservice.kr/repository/maven-public")
         maven("https://repo.papermc.io/repository/maven-public/")
+        maven("https://mvn.lumine.io/repository/maven-public/")
+        maven("https://repo.nexomc.com/releases")
+
     }
 
     versionCatalogs {
         create("libs") {
             library("spigot-api", "org.spigotmc:spigot-api:${getProperty("spigotVersion")}")
             library("paper-api", "io.papermc.paper:paper-api:${getProperty("spigotVersion")}")
+            library("mythicmobs","io.lumine:Mythic-Dist:${getProperty("mysthicmobsVersion")}")
+            library("nexomc","com.nexomc:nexo:${getProperty("nexomc")}")
 
         }
         create("framework") {
