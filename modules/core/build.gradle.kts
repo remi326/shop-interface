@@ -13,6 +13,7 @@ dependencies {
     compileOnly(framework.database)
     compileOnly(framework.inventory)
     compileOnly(framework.nms)
+    compileOnly(libs.fawe)
 
     compileOnly(project(":modules:api"))
 }
